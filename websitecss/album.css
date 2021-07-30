@@ -1,0 +1,40 @@
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-frame{
+    width: 300px;
+    height: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-detail{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+.photo-detail h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.photo-detail p{
+    color: white;
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(32, 218, 32, 0.7);
+}
+.photo-frame:hover .photo{
+    transform: scale(1.5) skew(-30deg);
+     transition: transform 2s ease-in-out; 
+}
